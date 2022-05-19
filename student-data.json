@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Andrea",
+    "surname": "Rossi",
+    "gender": "maschile",
+    "yob": 1990
+  },
+  {
+    "name": "Maria",
+    "surname": "Franchi",
+    "gender": "femminile",
+    "yob": 1997
+  },
+  {
+    "name": "Leslie",
+    "surname": "Fritas",
+    "gender": "femminile",
+    "yob": 1995
+  }
+]
