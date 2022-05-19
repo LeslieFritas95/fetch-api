@@ -40,7 +40,7 @@ function resultCallback(result){
 // }
 
 function convertResultInArrayOfStudents(result) {
-  const arrayOfStudents = result.map(obj => Student.fromObj(obj));
+  const arrayOfStudents = result.map(obj => student.fromObj(obj));
   return arrayOfStudents;
 }
 
