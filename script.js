@@ -14,7 +14,8 @@ const createTextSpan = (text) => {
   return span;
 }
 
-const deleteCallback = () => {
+const deleteCallback = (json) => {
+  console.log(json)
   initApp();
 }
 
@@ -30,7 +31,7 @@ const deleteStudent = (id) => {
 
 const createDeleteButton = (id) => {
   const button = document.createElement('button');
-  button.onclick = () => deleteStudent(id)
+  button.onclick = () => deleteStudent(id) 
   const node = document.createTextNode('cancella');
   button.appendChild(node);
   return button;
@@ -46,7 +47,13 @@ const createStudentCard = (student) => {
   return studentCard;
 }
 
-const createArrayOfStudentCard = (arrayOfStudents) => arrayOfStudents.map(student => createStudentCard(student));
+const createArrayOfStudentCard = (arrayOfStudents) => {
+  const studentCards = arrayOfStudents.map(student => {
+    const studentCard = createStudentCard(student)
+    return studentCard
+  })
+  return  studentCards
+};
 
 
 const displayStudents = (arrayOfStudents) => {
