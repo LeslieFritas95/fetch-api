@@ -1,4 +1,4 @@
-
+//2)
 const responseCallBack = (response) => {
     return  response.json();
 }
@@ -65,9 +65,13 @@ function displayTeachers(arrayOfTeachers){
 
 const convertResultInArrayOfTeachers = (result) => result.map(obj => Teachers.fromObj(obj));
 
-
+//3)
 const resultCallback = (result) => displayTeachers(convertResultInArrayOfTeachers(result));
 
+// const resultCallback2 = (result) => {
+//   const teachers = convertResultInArrayOfTeachers(result);
+//   return  displayTeachers(teachers);
+// }
 
 const catchError = (error) => console.log(error);
 
